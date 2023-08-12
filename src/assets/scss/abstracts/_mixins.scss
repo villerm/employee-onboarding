@@ -1,0 +1,18 @@
+@mixin font-face($family, $file, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $family;
+        src: url("@/assets/fonts/" + $file + ".ttf") format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin elevation($elevation) {
+    box-shadow: map-get($key-shadow-color-map, $elevation), map-get($key-shadow-color-2-map, $elevation);
+}
+
+@mixin requiredPseudo() {
+    content: "*";
+    color: $text-error;
+    font-weight: inherit;
+}

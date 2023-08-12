@@ -1,0 +1,24 @@
+/* Works on Firefox */
+$scroll-track-bg: traparent;
+$scroll-thumb-bg: #ccced4;
+$scroll-width: 8px;
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $scroll-thumb-bg $scroll-track-bg;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: $scroll-width; // for vertical scrollbars
+    height: $scroll-width; // for horizontal scrollbars
+}
+
+*::-webkit-scrollbar-track {
+    background: $scroll-track-bg;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $scroll-thumb-bg;
+    border-radius: 24px;
+}

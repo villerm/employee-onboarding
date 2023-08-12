@@ -1,0 +1,74 @@
+import {Meta} from "@storybook/addon-docs";
+
+<Meta title="Composables/Form-validation" />
+
+# Form validation
+
+Form validation is using [Vuelidate plugin](https://vuelidate-next.netlify.app/).
+It's wrapped into `useFormValidation` composable, to provide some generic helper functions.
+
+## How to use
+
+1. `import useFormValidation from ' /composables/formValidation.ts'`
+useFormValidation() returns the following object
+```ts
+const {
+  v$, // The orignal vuelidate object
+  validationAttributes, // function retrns validation attributes to FormInput component
+  validate // function to trigger form validation manually
+} = useFormValidation(validationRules, formData);
+```
+2. define form model and validation rules
+```ts
+import { required, minValue } from "@vuelidate/validators";
+
+const formData = reactive({
+  name: "Triin",
+  age: null as number | null,
+});
+
+const validationRules = computed(() => ({
+  name: {
+    required,
+  },
+  age: {
+    required,
+  minLength: minValue(5),
+},
+}));
+
+const onSubmit = async () => {
+  const isFormCorrect = await validate();
+  console.log("Form is valid", isFormCorrect);
+};
+
+const { v$, validationAttributes, validate } = useFormValidation(
+  validationRules,
+  formData
+);
+```
+[Built in validators](https://vuelidate-next.netlify.app/validators.html) can be imported from  "@vuelidate/validators" package
+
+3. use in template
+```html
+<template>
+  <form @submit.prevent="onSubmit">
+    {{ validationAttributes("name") }}
+    <FormInput
+      v-model="formData.name"
+      :type="EFormInputType.TEXT"
+      label="Nimi"
+      name="name"
+      v-bind="validationAttributes('name')"
+    />
+    <FormInput
+      v-model="formData.age"
+      label="Vanus"
+      :type="EFormInputType.NUMBER"
+      name="age"
+      v-bind="validationAttributes('age')"
+    />
+  </form>
+  <button @click="onSubmit">Saada</button>
+</template>
+```

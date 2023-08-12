@@ -1,0 +1,111 @@
+$background-light: #ccc;
+
+$font-main: "Poppins";
+
+$container-xs: 480px;
+$container-sm: 790px;
+$container-md: 992px;
+$container-lg: 1199px;
+$container-xl: 1400px;
+$container-xxl: 1600px;
+$container-xxxl: 1920px;
+
+// basic
+$white: #ffffff;
+$brand-primary: #135ab7;
+
+// Text
+$text-primary: #17171a;
+$text-secondary: #2e2e35;
+$text-placeholder: #626371;
+$text-on-color: #fefbfb;
+$text-on-color-disabled: #c1c3cb;
+$text-disabled: #e8eaed;
+$text-error: #bb1e10;
+$text-success: #19700b;
+
+// Heading
+$heading-primary: #062b53;
+$heading-on-color: #fefbfb;
+
+// Link
+$link-primary: #a25c1f;
+$link-primary-hover: #f2a440;
+$link-secondary: #eabc71;
+$link-on-dark: #fef9ee;
+$link-visited: #ad5b91;
+
+// Buttons
+$button-primary: #001427;
+$button-primary-hover: #062b53;
+$button-primary-active: #144583;
+$button-secondary: #dfe1e6;
+$button-secondary-hover: #ccced4;
+$button-secondary-active: #acaeba;
+$button-tertiary: #001427;
+$button-tertiary-hover: #062b53;
+$button-tertiary-active: #144583;
+$button-disabled: #dfe1e6;
+
+// Support
+$support-error: #fedce8;
+$support-success: #c9ede3;
+$support-warning: #fef8c2;
+$support-info: #d6eafe;
+
+// Focus
+$focus: #f0da4a;
+
+// Border
+$border-light-01: #f4f4f4;
+$border-light-02: #ccced4;
+$border-light-03: #acaeba;
+$border-dark-01: #484853;
+$border-dark-02: #626371;
+$border-dark-03: #7c7e8d;
+$border-interactive: #001427;
+$border-light-focused: #9dcbfa;
+
+// Background
+$background-light: #fefbfb;
+$background-dark: #062b53;
+$background-transparent: rgba(31, 13, 9, 0.74);
+
+// Surface
+$surface-light-01: #ffffff;
+$surface-light-01-hover: #c6dbff;
+$surface-dark-01: #2282ff;
+$surface-dark-01-hover: #7da0ff;
+$surface-light-02: #f7f7f8;
+$surface-light-03: #d6eafe;
+$surface-light-04: #fdcbe0;
+$surface-light-05: #e8eaed;
+
+// Border-radius
+$border-radius: 1.5rem;
+$border-radius-small: 12px;
+
+$key-shadow-color: rgba(black, 0.3);
+$key-shadow-color-2: rgba(black, 0.15);
+
+$key-shadow-color-map: (
+    1: 0px 1px 2px $key-shadow-color,
+    2: 0px 1px 2px $key-shadow-color,
+    3: 0px 4px 8px 3px $key-shadow-color-2,
+    4: 0px 6px 10px 4px $key-shadow-color-2,
+    5: 0px 8px 12px 6px $key-shadow-color-2,
+);
+
+$key-shadow-color-2-map: (
+    1: 0px 1px 3px 1px $key-shadow-color-2,
+    2: 0px 2px 6px 2px $key-shadow-color-2,
+    3: 0px 1px 3px $key-shadow-color,
+    4: 0px 2px 3px $key-shadow-color,
+    5: 0px 4px 4px $key-shadow-color,
+);
+
+$grid-breakpoints: (
+    mobile: 0,
+    tablet: 600px,
+    desktop: 835px,
+) !default;

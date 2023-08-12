@@ -1,0 +1,29 @@
+[
+  {
+    "token": "pT163duUknegX78BFOrwwbCBEit0HHXgHegPfOr3t7lejcSroXzNfqh08dEDFtwk",
+    "pageTitle": "Uue töötaja isikuandmete ankeet",
+    "applicant": {
+      "firstName": "Mari",
+      "lastName": "Maasikas",
+      "nationalIdentityNumber": null,
+      "dateOfBirth": null,
+      "gender": null
+    },
+    "contactDetails": {
+      "postalAddress": null,
+      "phoneNumber": null,
+      "emailAddress": "mari.maasikas@supermailer.com"
+    },
+    "bankAccount": {
+      "recipientName": "Mari Maasikas",
+      "iban": null
+    },
+    "emergencyContact": {
+      "firstName": null,
+      "lastName": null,
+      "relationshipType": null,
+      "phoneNumber": null,
+      "emailAddress": null
+    }
+  }
+]

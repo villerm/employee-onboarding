@@ -1,1 +1,118 @@
-{}
+{
+  "general": {
+    "loading": "Laadimine...",
+    "jobOffer": "Tööpakkumine",
+    "onboarding": "Onboarding",
+    "thankyou": "Aithäh!",
+    "formSubmitted": "Andmed on salvestatud!"
+  },
+  "labels": {
+    "contract": "Leping",
+    "remuneration": "Töötasu",
+    "probation": "Katseaeg",
+    "benefits": "Hüved ja soodustused",
+    "applicant": "Kandidaat",
+    "bankAccount": "Pangakonto andmed",
+    "contactDetails": "Kontaktandmed",
+    "emergencyContact": "Hädaabikontakt"
+  },
+  "fields": {
+    "pageTitle": "Lehekülje pealkiri",
+    "businessName": "Ettevõtte nimi",
+    "applicant": "Kandidaat",
+    "firstName": "Eesnimi",
+    "lastName": "Perekonnanimi",
+    "contractType": "Lepingu tüüp",
+    "structureTreeFullPath": "Asukoht struktuuris",
+    "welcomeText": "Tervitustekst",
+    "positionName": "Positsiooni nimetus",
+    "startDate": "Tööle asumise kuupäev",
+    "endDate": "Töösuhte lõppkuupäev (vajadusel)",
+    "fteWorkload": "Töökoormus",
+    "remunerationType": "Töötasu liik",
+    "remunerationGrossAmount": "Töötasu (bruto)",
+    "remunerationCurrency": "Töötasu valuuta",
+    "probationaryPeriodStartDate": "Katseaja alguskuupäev",
+    "probationaryPeriodEndDate": "Katseaja lõppkuupäev",
+    "benefits": "Hüved ja soodustused",
+    "nationalIdentityNumber": "Isikukood",
+    "dateOfBirth": "Sünnikuupäev",
+    "gender": "Sugu",
+    "recipientName": "Pangakonto omanik",
+    "iban": "IBAN ehk kontonumber",
+    "relationshipType": "Roll",
+    "phoneNumber": "Telefoni number",
+    "emailAddress": "Email address",
+    "postalAddress": "Postiaadress"
+  },
+  "placeholder": {
+    "firstName": "Sisesta eesnimi",
+    "lastName": "Sisesta perekonnanimi",
+    "nationalIdentityNumber": "Sisesta isikukood",
+    "dateOfBirth": "Vali sünnikuupäev",
+    "gender": "Vali sugu",
+    "postalAddress": "Sisesta postiaadress",
+    "phoneNumber": "Sisesta telefoni number",
+    "emailAddress": "Sisesta emaili address",
+    "recipientName": "Saaja nimi",
+    "iban": "Sisesta kontonumber",
+    "relationshipType": "Vali roll"
+  },
+  "contractType": {
+    "Employment": "Tööleping",
+    "AuthorizationAgreement": "Käsundusleping",
+    "ContractForServices": "Töövõtuleping",
+    "Replacement": "Asendamine"
+  },
+  "remunerationType": {
+    "HourlyWage": "Tunnipalk",
+    "MonthlySalary": "Kuupalk",
+    "AnnualSalary": "AnnualSalary"
+  },
+  "currency": {
+    "EUR": "eurod",
+    "USD": "dollarid"
+  },
+  "salaryCurrency": {
+    "EUR": "eurot",
+    "USD": "dollarit"
+  },
+  "terms": {
+    "readAccept": "Olen tööpakkumise läbi lugenud ja nõustun selle tingimustega."
+  },
+  "button": {
+    "confirmOffer": "Kinnita tööpakkumine",
+    "back": "Tagasi",
+    "save": "Salvesta ja esita andmed"
+  },
+  "relationshipType": {
+    "Child": "Laps",
+    "Spouse": "Abikaasa",
+    "LifePartner": "Elukaaslane",
+    "Father": "Isa",
+    "Mother": "Ema",
+    "Grandfather": "Vanaisa",
+    "Grandmother": "Grandmother",
+    "Other": "Muu"
+  },
+  "gender": {
+    "Male": "Mees",
+    "Female": "Naine"
+  },
+  "form": {
+    "requiredFields": "Kohustuslikud väljad",
+    "errors": {
+      "general": {
+        "fieldRequired": "Väli on kohustuslik",
+        "numeric": "Ainult numbrid lubatud",
+        "minLength": "Isikukoodi pikkus on vale"
+      },
+      "idcode": {
+        "minLength": "Isikukoodi pikkus on vale"
+      },
+      "email": {
+        "isValid": "E-maili aadress on vigane"
+      }
+    }
+  }
+}

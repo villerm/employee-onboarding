@@ -1,0 +1,93 @@
+h1,
+.h1 {
+    font-size: 4rem;
+    line-height: 4.25rem;
+    font-weight: 600;
+    margin: 2.625rem 0;
+}
+
+h2,
+.h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    margin: 2.125rem 0;
+}
+
+h3,
+.h3 {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin: 1.6875rem 0;
+}
+
+h4,
+.h4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin: 1.375rem 0;
+}
+
+h5,
+.h5 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+    margin: 1.3125rem 0;
+}
+
+p:not(.unstyled) {
+    margin: 1.3125rem 0;
+}
+
+a {
+    color: $link-primary;
+    text-decoration: underline;
+    &:hover {
+        color: $link-primary-hover;
+    }
+    &:visited {
+        color: $link-visited;
+    }
+}
+.font-size-normal {
+    font-size: 1rem;
+}
+.text-link {
+    color: $text-primary;
+    &:visited {
+        color: $text-primary;
+    }
+}
+
+caption {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    font-weight: 600;
+}
+
+strong,
+.text-bold {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-display {
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+
+.custom-content {
+    > p {
+        margin: 0;
+        & + p {
+            margin-top: 1rem;
+        }
+    }
+}
