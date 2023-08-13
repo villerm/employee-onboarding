@@ -16,7 +16,6 @@ import { onBeforeMount, ref } from "vue";
 import { useRouter } from "vue-router";
 import { getEmployeeForm } from "@/services/offers";
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
-import handleError from "@/utils/handleError";
 import ApplicantForm from "@/components/ApplicantForm.vue";
 import useApplicant from "@/Store/applicant";
 import type { IApplicantFormResponse } from "@/types/applicant";
@@ -33,7 +32,6 @@ const fetchApplicantForm = async () => {
   try {
     applicantFormData.value = await getEmployeeForm(applicantStore.token);
   } catch (e) {
-    const { message: errorMessage } = handleError(e);
     await router.push({ path: "/" });
   } finally {
     loading.value = false;

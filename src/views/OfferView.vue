@@ -17,7 +17,6 @@ import { useRoute, useRouter } from "vue-router";
 import type { IOffer } from "@/types/jobOffer";
 import { getOffer } from "@/services/offers";
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
-import handleError from "@/utils/handleError";
 import OfferDetails from "@/components/OfferDetails.vue";
 import useApplicant from "@/Store/applicant";
 
@@ -36,7 +35,6 @@ const fetchOffer = async () => {
   try {
     offer.value = await getOffer(applicantStore.token);
   } catch (e) {
-    const { message: errorMessage } = handleError(e);
     await router.push({ path: "/" });
   } finally {
     loading.value = false;

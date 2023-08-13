@@ -11,7 +11,6 @@ export const getOffer = async (token: string): Promise<IOffer> => {
     const { data } = await api.get(`/job-offer/${token}`);
     return data;
   } catch (e) {
-    console.log(e);
     return Promise.reject(handleError(e));
   }
 };
@@ -25,7 +24,6 @@ export const getEmployeeForm = async (token: string): Promise<any> => {
     const { data } = await api.get(`/new-employee-form/${token}`);
     return data;
   } catch (e) {
-    console.log(e);
     return Promise.reject(handleError(e));
   }
 };

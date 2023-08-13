@@ -35,7 +35,7 @@ import FormInputs from "@/components/Form/FormInputs.vue";
 import SvgIcon from "@/components/SvgIcon/SvgIcon.vue";
 import useLayout from "@/composables/layout/layout";
 
-const props = withDefaults(
+withDefaults(
   defineProps<{
     /** Section title */
     title?: string;

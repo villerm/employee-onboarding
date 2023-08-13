@@ -15,7 +15,7 @@ const props = withDefaults(
   {
     desktopColumns: 2,
     columnTemplate: "",
-  }
+  },
 );
 
 const classes = computed(() => [
