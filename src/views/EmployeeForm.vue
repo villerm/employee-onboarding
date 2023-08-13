@@ -49,7 +49,7 @@ onBeforeMount(async () => {
 <style lang="scss" scoped>
 .offer {
   max-width: $container-lg;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   padding: 0 1rem;
 }
 .progress {
